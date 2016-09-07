@@ -1,0 +1,4 @@
+services:
+#    qalpha_fixture.example:
+#        class: Carmudi\FixtureBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

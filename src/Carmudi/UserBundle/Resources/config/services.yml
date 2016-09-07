@@ -1,0 +1,5 @@
+services:
+    qalpha_user:
+        class: Carmudi\UserBundle\Model\UserManager
+        arguments: 
+            em: "@doctrine.orm.entity_manager"

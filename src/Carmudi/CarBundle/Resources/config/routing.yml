@@ -1,0 +1,10 @@
+carmudi_car_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CarmudiCarBundle:Default:index }
+
+carmudi_car_registration_post:
+    pattern:  /car/registration
+    defaults: { _controller: CarmudiCarBundle:Car:postCarReg }
+    requirements:
+        _method: POST
+

@@ -1,0 +1,24 @@
+qalpha_base:
+    resource: "@CarmudiBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+qalpha_org:
+    resource: "@CarmudiCarBundle/Resources/config/routing.yml"
+    prefix:   /
+
+qalpha_api:
+    resource: "@CarmudiApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+qalpha_user:
+    resource: "@CarmudiUserBundle/Resources/config/routing.yml"
+    prefix:   /user
+
+NelmioApiDocBundle:
+  resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+  prefix:   /api/doc
+
+fos_oauth_server_token:
+  resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+
+

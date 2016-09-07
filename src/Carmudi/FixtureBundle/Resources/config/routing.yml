@@ -1,0 +1,3 @@
+qalpha_fixture_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CarmudiFixtureBundle:Default:index }

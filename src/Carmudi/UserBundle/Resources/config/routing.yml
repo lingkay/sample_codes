@@ -1,0 +1,47 @@
+qalpha_api_users:
+    type: rest
+    resource: Carmudi\UserBundle\Controller\UserController
+
+qalpha_user_get:
+    pattern:  /
+    defaults: { _controller: CarmudiUserBundle:User:userDetails }
+    requirements:
+        _method:  GET
+
+qalpha_user_patch:
+    pattern:  /
+    defaults: { _controller: CarmudiUserBundle:User:userPatchDetails }
+#    requirements:
+#        _method:  PATCH
+
+#qalpha_user_patch:
+#    path:      /
+#    defaults: { _controller: CarmudiUserBundle:User:userPatchDetails }
+#    methods:  [PATCH]  
+
+qalpha_user_add:
+    pattern:  /{id}
+    defaults: { _controller: CarmudiUserBundle:User:userAdd }
+    requirements:
+        id:  \d+ 
+
+qalpha_user_edit:
+    pattern:  /{id}
+    defaults: { _controller: CarmudiUserBundle:User:userEdit }
+    requirements:
+        id:  \d+     
+
+qalpha_user_delete:
+    pattern:  /{id}
+    defaults: { _controller: CarmudiUserBundle:User:userDelete }
+    requirements:
+        id:  \d+ 
+
+qalpha_user_show:
+    pattern:  /{id}
+    defaults: { _controller: CarmudiUserBundle:User:userShow }
+    requirements:
+        id:  \d+ 
+
+
+
